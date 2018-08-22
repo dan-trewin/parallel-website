@@ -1,0 +1,10 @@
+[14-Jan-2018 01:46:20 UTC] PHP Notice:  Undefined index: scoreType in /home/lavaflyer/public_html/webServices.php on line 30
+[16-Jan-2018 04:55:33 UTC] PHP Notice:  Undefined variable: conn in /home/lavaflyer/public_html/webServices.php on line 107
+[16-Jan-2018 04:55:33 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/lavaflyer/public_html/webServices.php on line 107
+[14-Feb-2018 22:52:47 UTC] PHP Notice:  Undefined index: gameName in /home/lavaflyer/public_html/webServices.php on line 29
+[14-Feb-2018 22:53:25 UTC] PHP Notice:  Undefined index: gameName in /home/lavaflyer/public_html/webServices.php on line 29
+[14-Feb-2018 22:53:42 UTC] PHP Notice:  Undefined index: gameName in /home/lavaflyer/public_html/webServices.php on line 29
+[14-Feb-2018 23:59:16 UTC] PHP Notice:  Undefined index: action in /home/lavaflyer/public_html/webServices.php on line 25
+[14-Feb-2018 23:59:24 UTC] PHP Notice:  Undefined index: gameName in /home/lavaflyer/public_html/webServices.php on line 30
+[14-Feb-2018 23:59:24 UTC] PHP Notice:  Undefined index: scoreType in /home/lavaflyer/public_html/webServices.php on line 31
+[14-Feb-2018 23:59:37 UTC] PHP Notice:  Undefined index: scoreType in /home/lavaflyer/public_html/webServices.php on line 31

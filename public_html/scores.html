@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>Parallel Games | Scores</title>
+
+  <!-- Meta -->
+  <meta name="description" content="This is the scores page for Parallel Games">
+  <meta name="keywords" content="parallel, games, video-games, block-ooo, nomad-quest, dan, trewin, daniel, dan-trewin, daniel-trewin">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- jQuery & Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+  <!-- Dt Style -->
+  <link rel="stylesheet" type="text/css" href="./css/parallel.css">
+  <link rel="stylesheet" type="text/css" href="./css/scores.css">
+
+  <!-- Fonts -->
+  <script src="//use.edgefonts.net/allan:n7.js"></script>
+  <script src="//use.edgefonts.net/viga.js"></script>
+  <script src="//use.edgefonts.net/amaranth;bowlby-one-sc.js"></script>
+
+  <!-- Height matcher Script -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+
+  <!-- Dt Scripts -->
+  <script src="./js/parallel.js"></script>
+
+</head>
+
+<body>
+  <div id="page" class="page" data-page-name="scores"></div>
+  <div class="container-fluid">
+
+    <div id="navigation"></div>
+
+    <div class="contentBlock">
+
+      <div class="row">
+        <div class="col-lg">
+
+          <div class="largeText">
+            Scores
+          </div>
+
+          <label class="medText" for="game">Game:</label>
+          <select class="medText" name="game" id="gameSelector">
+            <option selected="selected">Greedy Warlock</option>
+            <option>Wraith</option>
+            <option>Ridiculous History</option>
+          </select>
+
+          <label class="medText" for="game">Type:</label>
+          <select class="medText" name="game" id="typeSelector">
+            <option selected="selected" name="1">Top</option>
+            <option name="2">Recent</option>
+          </select>
+
+          <hr>
+          <div id="scores" class="medText">
+
+            <div class="row">
+              <div id="scoresCol1" class="scoresCol">
+              </div>
+              <div id="scoresCol2" class="scoresCol">
+              </div>
+              <div id="scoresCol3" class="scoresCol">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-lg">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="largeText">By Dan Trewin</div>
+      <div class="medText">&#169 Parallel Games 2012-2018. All rights reserved.</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+.gamesBlock {
+	background-color: #4ABDAC;
+	
+	margin: 3vmin 0vmin 3vmin 0vmin;
+	padding: 5vmin;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	cursor: pointer;
+}
+.gamesBlock:hover {
+	outline: .6vmin solid grey;
+}
+
+.gameImg {
+	width: 58%;
+}
+
+/* DT media queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.gamesBlock {
+		margin: 3vmin 4vmin 3vmin 4vmin;
+	}
+	.gameImg {
+		width: 86%;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.gamesBlock {
+		margin: 3vmin 3.4vmin 3vmin 3.4vmin;
+	}
+	.gameImg {
+		width: 95%;
+	}
+}

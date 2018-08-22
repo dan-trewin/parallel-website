@@ -1,0 +1,361 @@
+
+/*///////////////////////////////////////////////////
+///////////////       Site Wide 
+///////////////////////////////////////////////////*/
+
+body {
+    background-color: #333333 !important;
+}
+
+.errorMsg {
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.4em;
+    color: orange;
+}
+
+.DT_alert {
+    left:2%; 
+    top: 27%; 
+    position:fixed; 
+    z-index:50
+}
+
+.defaultLink {
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.4em;
+    color: white;
+    
+    text-shadow: .05em .05em black;
+      
+    margin: 2%;
+}
+
+.defaultLink:hover {
+    
+    color: springgreen;
+}
+
+
+
+#DT_container {
+	border-style: solid;
+	border-width: .25em;
+	border-color: white;
+	
+	/*
+    margin-top:4%;
+    margin-bottom:4%;
+	margin-left: 20%;
+    margin-right: 20%;
+    */
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+    
+    box-shadow: 1.4em 1.4em 2em black;
+    background-color: #473f49;
+	
+	display: none;
+}
+
+
+#DT_footer {
+    
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.4em;
+    color: white;
+    
+    text-align: center;
+    margin-top: 8%;
+}
+
+.generalContainer p {
+
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+
+    line-height: 180%;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1.25em; 
+    color: white;
+}
+.generalContainer ul {
+    padding-top: 2%;
+}
+.generalContainer ul li {
+    /*padding-top: 2%;
+    padding-left: 4%;*/
+    padding-right: 4%;
+    padding-bottom: 1%;
+
+    line-height: 140%;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1.25em; 
+    color: white;
+}
+
+.generalContainer h1 {
+    margin:0%;
+    padding-bottom: 2%;
+    
+    font-family: abril-fatface, sans-serif;
+    font-size: 2.5em; 
+    text-shadow: .05em .05em black;
+    color: white;
+}
+
+/*subtitle*/
+.generalContainer h3 {
+    margin:0%;
+    padding-bottom: 2%;
+    
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.8em; 
+    text-shadow: .05em .05em black;
+    color: orange;
+    color: #f67979;
+}
+
+.generalContainer h3 a {
+    
+    font-size: inherit; 
+    /*color: orange;*/
+}
+
+
+
+/*///////////////////////////////////////////////////
+///////////////       Blog Page 
+///////////////////////////////////////////////////*/
+
+hr {
+   margin-top: .6% !important;
+}
+
+.blogPostContainer {
+   
+}
+
+.blogPostContainer p {
+    
+    /*2% , 8% */
+    margin-top: .5%;
+    margin-bottom: .5%;
+    border-radius: 1em;
+    
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    
+    line-height: 180%;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1.25em; 
+    
+    color: white;
+}
+
+.blogPostContainer h1 {
+    display: inline;
+    padding-bottom: 1%;
+    
+    font-family: abril-fatface, sans-serif;
+    font-size: 2.5em; 
+    text-shadow: .05em .05em black;
+    color: white;
+    
+    
+}
+
+
+/*subtitle*/
+.blogPostContainer h3 {
+    margin:0%;
+    padding-bottom: 2%;
+    
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.8em; 
+    text-shadow: .05em .05em black;
+    color: orange;
+    color: #f67979;
+}
+
+
+
+
+/*///////////////////////////////////////////////////
+///////////////       Games Page 
+///////////////////////////////////////////////////*/
+
+.gameButton{
+
+    
+	border: solid;
+	border-width: .6em;
+	border-color: #473f49;
+    
+    width: 60%;
+    margin: 4%;
+    /*
+    margin: 2.5%;
+    
+    display: inline-block;*/
+}
+
+.gameButton:hover{
+
+    border-color: springgreen;
+}
+
+.carousel-inner img {
+    /*width:300px;*/
+    margin: 0 auto;
+}
+
+.gamePageLink {
+    margin:0%;
+    padding-bottom: 2%;
+    
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.8em;
+    text-shadow: .05em .05em black;
+    
+    color:white;
+    /*color: white;
+    text-decoration: none;*/
+}
+
+.gamePageLink:link {
+    color: white;
+    text-decoration: none;
+}
+
+.gamePageLink:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.gamePageLink:hover {
+    color: springgreen;
+    text-decoration: underline;
+}
+
+.gamePageLink:active {
+    color: springgreen;
+    text-decoration: underline;
+}
+
+
+
+/*///////////////////////////////////////////////////
+///////////////       Contact Page 
+///////////////////////////////////////////////////*/
+
+#formContainer {
+    
+    outline-style: solid;
+    outline-width: .3em;
+    outline-color: #ffffff;
+
+    
+	margin:3%;
+    
+    padding: 3%;
+    
+    box-shadow: 1.4em 1.4em 2em black;
+    
+    
+    background-color: black;
+}
+
+
+/*///////////////////////////////////////////////////
+///////////////       Nav Bar 
+///////////////////////////////////////////////////*/
+
+
+
+#DT_logo {
+    /*width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;*/
+    
+    /*margin-left: 30%;
+    margin-right: 30%;*/
+}
+
+
+
+
+#disqus_thread {
+    background-color: black; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    padding-left: 5%; 
+    padding-right: 5%; 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    width: 70%;
+    
+}
+
+
+
+
+
+.navLink {
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.4em;
+    color: white !important;
+}
+
+.navText {
+    font-family: abril-fatface, sans-serif;
+    font-size: 1.4em;
+    color: springgreen !important;
+}
+.navLink:hover {
+    color: springgreen !important;
+}
+
+
+
+.navHeader {
+    font-family: abril-fatface, sans-serif;
+    font-size: 2em !important;
+    color: white !important;
+}
+.navHeader:hover {
+    color: springgreen !important;
+}
+
+.navbar {
+    background-image: none !important;
+    border-style: solid !important;
+	border-width: .25em !important;
+	border-color: white !important;
+    
+    box-shadow: 1.4em 1.4em 2em black;
+    background-color: #473f49 !important;
+    
+    margin-top:1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    /*
+    margin-top: 1%;
+    margin-left: 23%;
+    margin-right: 23%;*/
+}
+
+
+.DT_collapse, .DT_expand {
+    /* 6 and 3 */
+    /*display: inline-block !important;*/
+    
+    padding: 1.5% !important;
+    margin: 3.3% !important; 
+    margin-top: 0% !important; 
+}

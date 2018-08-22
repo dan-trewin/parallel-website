@@ -1,0 +1,168 @@
+
+/* //////////////////////////////////////////////
+/* ///////	Main 
+///////////////////////////////////////////////*/
+
+html {
+	width: 100%;
+	background-color: #DFDCE3;
+}
+
+body {
+	background-color: #DFDCE3;
+	margin: 0;
+	
+	/* 	default text */
+	font-family: viga, sans-serif;
+	color: white;
+}
+
+hr {
+	border-top: 1vmin solid rgba(0,0,0,.2);
+}
+
+
+.contentBlock {
+	background-color: #4ABDAC;
+	
+	margin: 3vmin 0vmin 3vmin 0vmin;
+	padding: 5vmin;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+iframe {
+ 	border: none;
+}
+.playFrame {
+	border: none;
+  	height: 100%;
+  	width: 100%;
+  	resize: both;
+ 	overflow: auto;
+}
+.hidden {
+    display: none;
+}
+
+
+/* //////////////////////////////////////////////
+/* ///////	Navbar 
+///////////////////////////////////////////////*/
+
+.navbar {
+	
+    padding-top: 1.2vmin;
+    padding-bottom: 1.2vmin;
+	
+	background-color: #FC4A1A;
+	margin-top: 2vmin;
+	font-family: bowlby-one-sc, sans-serif;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* 	border: 1vmin dashed #DFDCE3; */
+}
+/* nabar title size */
+.navbar-brand {
+	font-size: 1.6rem;
+}
+/* navbar title color */
+.navbar-light .navbar-brand {
+	color: #373737;
+}
+/* navbar title hover color */
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #373737;
+}
+/* navbar link color */
+.navbar-light .navbar-nav .nav-link {
+	color: #373737;
+}
+/* navbar link hover color */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #F7B733;
+}
+/* navbar selected link color */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #F7B733;
+}
+
+
+/* //////////////////////////////////////////////
+/* ///////	Footer 
+///////////////////////////////////////////////*/
+
+.footer {
+	background-color: #FC4A1A;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+/*     margin-top: 3vmin; */
+    margin-bottom: 2vmin;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* //////////////////////////////////////////////
+/* ///////	Carousel 
+///////////////////////////////////////////////*/
+
+.carousel-indicators li {
+	height: 6px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+.carousel {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* //////////////////////////////////////////////
+/* ///////	Text 
+///////////////////////////////////////////////*/
+
+.largeText {
+	font-size: 6.1vmin;
+}
+.medText {
+	font-size: 4vmin;
+}
+
+
+/* DT media queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+ 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.contentBlock {
+		margin: 3vmin 8vmin 3vmin 8vmin;
+	}
+	.largeText {
+		font-size: 4.2vmin;
+	}
+	.medText {
+		font-size: 2.5vmin;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.contentBlock {
+		margin: 3vmin 8vmin 3vmin 8vmin;
+	}
+	.largeText {
+		font-size: 4.2vmin;
+	}
+	.medText {
+		font-size: 1.8vmin;
+	}
+}

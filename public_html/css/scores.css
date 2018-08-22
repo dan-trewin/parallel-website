@@ -1,0 +1,14 @@
+
+.scoresCol {
+  margin: 1.5vmin;
+}
+
+#scores {
+  height: 515px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#scores > .row {
+  margin-left: 0px;
+}
