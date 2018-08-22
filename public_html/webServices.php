@@ -7,18 +7,20 @@ include 'secrets.php';
 
 // ArchHosting Database Connection
 // Create Connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+try {
+    $conn = new PDO("mysql:host=" . $servername . ";dbname=" . $dbname . ";port=" . $port, $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// Check Connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    //Include all database queries here
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
 }
 
 // Error message - if action wasn't provided at all
 if (!isset($_GET['action'])) {
-    echo "You must provide the GET variable: action" . PHP_EOL;
-    echo "Available Parallel Games webServices.php actions are:" . PHP_EOL;
-    echo "  getScores" . PHP_EOL;
+    echo "You must provide the GET variable: action <br>";
+    echo "Available Parallel Games webServices.php actions are: <br>";
+    echo "  getScores <br>";
     echo "  postScore";
 
     return;
@@ -33,11 +35,11 @@ if ($action == "getScores") {
     $status = 0;
 
     if (!isset($_GET['gameName'])) {
-        echo "You must provide the GET variable: gameName" . PHP_EOL;
+        echo "You must provide the GET variable: gameName <br>";
         $status = 1;
     }
     if (!isset($_GET['scoreType'])) {
-        echo "You must provide the GET variable: scoreType" . PHP_EOL;
+        echo "You must provide the GET variable: scoreType <br>";
         $status = 1;
     }
     if ($status == 1) {return;}
@@ -47,15 +49,15 @@ if ($action == "postScore") {
     $status = 0;
 
     if (!isset($_GET['name'])) {
-        echo "You must provide the GET variable: name" . PHP_EOL;
+        echo "You must provide the GET variable: name <br>";
         $status = 1;
     }
     if (!isset($_GET['score'])) {
-        echo "You must provide the GET variable: score" . PHP_EOL;
+        echo "You must provide the GET variable: score <br>";
         $status = 1;
     }
     if (!isset($_GET['hash'])) {
-        echo "You must provide the GET variable: hash" . PHP_EOL;
+        echo "You must provide the GET variable: hash <br>";
         $status = 1;
     }
     if ($status == 1) {return;}
@@ -78,23 +80,22 @@ if ($action == "getScores") {
         $query = "SELECT highscore_name, highscore_score " .
             "FROM parallel_highscore " .
             "JOIN parallel_game ON game_id = highscore_game_id " .
-            "WHERE game_name = ? " .
+            "WHERE game_name = :gameName " .
             "ORDER BY CAST(highscore_score AS signed) desc";
 
     } elseif ($scoreType == "Recent") {
         $query = "SELECT highscore_name, highscore_score " .
             "FROM parallel_highscore " .
             "JOIN parallel_game ON game_id = highscore_game_id " .
-            "WHERE game_name = ? " .
+            "WHERE game_name = :gameName " .
             "ORDER BY highscore_time desc";
     } else {
         $status = 1;
     }
 
     if ($status == 0) {
-
         $stmt = $conn->prepare($query);
-        $stmt->bind_param("s", $gameName);
+        $stmt->bindParam(':gameName', $gameName);
         $stmt->execute();
 
         foreach ($stmt as $row) {
@@ -125,7 +126,9 @@ if ($action == "getScores") {
             (:name, :score, :gameId, CURRENT_TIMESTAMP())";
 
         $stmt = $conn->prepare($query);
-        $stmt->bind_param("ssi", $name, $score, $gameId);
+        $stmt->bindParam(':name', $name);
+        $stmt->bindParam(':score', $score);
+        $stmt->bindParam(':gameId', $gameId);
         $stmt->execute();
 
         echo "Success - Posted Score";
